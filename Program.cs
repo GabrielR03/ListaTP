@@ -49,19 +49,25 @@ namespace ProgramNS{
 
             //Programa
             System.Console.WriteLine("1 - Imprime todos os álbuns de um determinado artista: ");
-            foreach(var album in Busca.AlbunsPorArtista(artistas, artistas[0].nome)) Console.WriteLine("- " + album.nome);
+            foreach(var album in Buscador.AlbunsArtista(artistas, artistas[0].nome)) Console.WriteLine("- " + album.nome);
+
             System.Console.WriteLine("\n2 - Imprime todos os álbuns lançados em determinado ano: ");
-            foreach(var album in Busca.AlbunsPorArtistaPorAno(artista1, 1997)) Console.WriteLine("- " + album.nome);
+            foreach(var album in Buscador.AlbunsArtistaAno(artista1, 1997)) Console.WriteLine("- " + album.nome);
+
             System.Console.WriteLine("\n3 - Imprime todas as músicas de um artista: ");
-            foreach(var musica in Busca.MusicaPorArtista(artista1)) Console.WriteLine("- " + musica.nome);
+            foreach(var musica in Buscador.MusicaArtista(artista1)) Console.WriteLine("- " + musica.nome);
+
             System.Console.WriteLine("\n4 - Imprime todas as músicas de um artista em determinado ano: ");
-            foreach(var musica in Busca.MusicaPorArtistaPorAno(2003, artista1)) Console.WriteLine("- " + musica.nome);
+            foreach(var musica in Buscador.MusicaArtistaAno(2003, artista1)) Console.WriteLine("- " + musica.nome);
+
             System.Console.WriteLine("\n5 - Imprime todos os álbuns do mesmo gênero de um produtor: ");
-            foreach(var album in Busca.AlbunsPorGeneroPorProdutor(produtor1, "Heavy Metal")) Console.WriteLine("- " + album.nome);
+            foreach(var album in Buscador.AlbunsGeneroProdutor(produtor1, "Heavy Metal")) Console.WriteLine("- " + album.nome);
+
             System.Console.WriteLine("\n6 - Imprime todos os álbuns do mesmo ano de um produtor: ");
-            foreach(var album in Busca.AlbunsPorGeneroPorProdutor(produtor1, "Heavy Metal")) Console.WriteLine("- " + album.nome);
+            foreach(var album in Buscador.AlbunsAnoProdutor(produtor1, 2003)) Console.WriteLine("- " + album.nome);
+            
             System.Console.WriteLine("\n7 - Imprime a lista ordenada decrescente de lançamento dos álbuns de um artista: ");
-            foreach(var album in Busca.AlbunsOrdenadosDecrescentePorArtista(artista1)) Console.WriteLine("- " + album.nome);
+            foreach(var album in Buscador.AlbunsDecrescenteArtista(artista1)) Console.WriteLine("- " + album.nome);
         }    
     }
 }

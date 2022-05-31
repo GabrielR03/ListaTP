@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProgramNS{
-    public abstract class Busca
+    public abstract class Buscador
         {
             //Album por Artista
-            public static List<Album> AlbunsPorArtista(List<Artista> artistas, string nomeArtista)
+            public static List<Album> AlbunsArtista(List<Artista> artistas, string nomeArtista)
             {
                 var _albuns =   from artistasL in artistas
                                 from albuns in artistasL.albuns
@@ -17,21 +17,25 @@ namespace ProgramNS{
                     return _albuns.ToList();
             }
             //Album por ano
-            public static List<Album> AlbunsPorArtistaPorAno(Artista artista, int ano)
+            public static List<Album> AlbunsArtistaAno(Artista artista, int ano)
             {
-                var _albuns =   from albuns in artista.albuns where albuns.dataLancamento.Year == ano select albuns;
+                var _albuns =   from albuns in artista.albuns
+                                where albuns.dataLancamento.Year == ano
+                                select albuns;
                 return _albuns.ToList();
             }
 
             //Musica por Artista
-            public static List<Musica> MusicaPorArtista(Artista artista)
+            public static List<Musica> MusicaArtista(Artista artista)
             {
-                var _musicas =  from albuns in artista.albuns from musicas in albuns.musicas select musicas;
+                var _musicas =  from albuns in artista.albuns
+                                from musicas in albuns.musicas
+                                select musicas;
                 return _musicas.ToList();
             }
 
             //Musica por ano
-            public static List<Musica> MusicaPorArtistaPorAno(int ano, Artista artista)
+            public static List<Musica> MusicaArtistaAno(int ano, Artista artista)
             {
                 var _musicas =  from albuns in artista.albuns
                                 from musicas in albuns.musicas
@@ -41,23 +45,29 @@ namespace ProgramNS{
             }
 
             //Álbum por gênero
-            public static List<Album> AlbunsPorGeneroPorProdutor(Produtor produtor, string genero)
+            public static List<Album> AlbunsGeneroProdutor(Produtor produtor, string genero)
             {
-                var _albuns =   from albuns in produtor.albuns where albuns.genero == genero select albuns;
+                var _albuns =   from albuns in produtor.albuns
+                                where albuns.genero == genero
+                                select albuns;
                 return _albuns.ToList();
             }
 
             //Album por ano
-            public static List<Album> AlbunsPorAnoPorProdutor(Produtor produtor, int ano)
+            public static List<Album> AlbunsAnoProdutor(Produtor produtor, int ano)
             {
-                var _albuns =   from albuns in produtor.albuns where albuns.dataLancamento.Year == ano select albuns;
+                var _albuns =   from albuns in produtor.albuns
+                                where albuns.dataLancamento.Year == ano
+                                select albuns;
                 return _albuns.ToList();
             }
 
             //Lista ordenada decrescente
-            public static List<Album> AlbunsOrdenadosDecrescentePorArtista(Artista artista)
+            public static List<Album> AlbunsDecrescenteArtista(Artista artista)
             {
-                var _albuns =   from albuns in artista.albuns orderby albuns.dataLancamento select albuns;
+                var _albuns =   from albuns in artista.albuns
+                                orderby albuns.dataLancamento
+                                select albuns;
                 return _albuns.ToList();
             }
         }
