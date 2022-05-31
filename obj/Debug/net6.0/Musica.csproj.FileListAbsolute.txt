@@ -1,0 +1,5 @@
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\Musica.csproj.AssemblyReference.cache
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\Musica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\Musica.AssemblyInfoInputs.cache
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\Musica.AssemblyInfo.cs
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\Musica.csproj.CoreCompileInputs.cache

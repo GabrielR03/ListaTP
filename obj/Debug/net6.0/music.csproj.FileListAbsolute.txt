@@ -1,0 +1,15 @@
+C:\Users\grppe\Desktop\Musica\bin\Debug\net6.0\music.exe
+C:\Users\grppe\Desktop\Musica\bin\Debug\net6.0\music.deps.json
+C:\Users\grppe\Desktop\Musica\bin\Debug\net6.0\music.runtimeconfig.json
+C:\Users\grppe\Desktop\Musica\bin\Debug\net6.0\music.dll
+C:\Users\grppe\Desktop\Musica\bin\Debug\net6.0\music.pdb
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.csproj.AssemblyReference.cache
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.AssemblyInfoInputs.cache
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.AssemblyInfo.cs
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.csproj.CoreCompileInputs.cache
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.dll
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\refint\music.dll
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.pdb
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\music.genruntimeconfig.cache
+C:\Users\grppe\Desktop\Musica\obj\Debug\net6.0\ref\music.dll
